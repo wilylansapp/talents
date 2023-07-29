@@ -1,0 +1,41 @@
+$color-primary: #8472fa;
+$color-white: #f0f0f0;
+.custom-button {
+  font-family: 'Inter';
+  background-color: transparent;
+  border: solid 2px $color-white;
+  color: $color-white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 100px 50px 100px 50px;
+  transition: all 0.1s ease;
+  font-size: 18px;
+  padding: 10px 25px;
+  margin: 5px;
+}
+
+.custom-button:hover {
+  color: $color-primary;
+  /* Inversion de la bordure au hover */
+  border-radius: 50px 100px 50px 80px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.09);
+  border: solid 2px $color-primary;
+
+  /* Ombre plus grande au hover */
+  /* Opacité au hover */
+  opacity: 1;
+  padding: 10px 25px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  color: $color-white;
+}
+
+.custom-button:active {
+  /* Vos styles CSS souhaités */
+  background: $color-primary;
+  color: $color-white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.45);
+}
